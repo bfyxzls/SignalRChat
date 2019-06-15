@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>用户登陆</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div>用户名：<input type="text" name="userName" /></div>
+    <div>密码：<input type="text" name="password" /></div>
+    <div>
+        <input type="submit" value="提交" />
+    </div>
+}
