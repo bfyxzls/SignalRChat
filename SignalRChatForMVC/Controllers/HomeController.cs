@@ -8,7 +8,7 @@ namespace SignalRChatForMVC.Controllers
 {
     public class HomeController : Controller
     {
-        static List<UserDetail> UserBase = new List<UserDetail>();
+        public static List<UserDetail> UserBase = new List<UserDetail>();
         static HomeController()
         {
             UserBase.Add(new UserDetail { UserID = "1", UserName = "zzl", Password = "zzl" });
@@ -25,10 +25,16 @@ namespace SignalRChatForMVC.Controllers
         {
             return View();
         }
+        public ActionResult Logout()
+        {
+            Session["userID"] = null;
+            return RedirectToAction("Login");
+        }
+
         [HttpPost]
         public ActionResult Login(FormCollection form)
         {
-            var entity = UserBase.FirstOrDefault(i => i.UserName == form["userName"] 
+            var entity = UserBase.FirstOrDefault(i => i.UserName == form["userName"]
                 && i.Password == form["password"]);
             if (entity != null)
             {

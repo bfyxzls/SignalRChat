@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using SignalR.Core.Model;
+using SignalRChatForMVC.Controllers;
 using SignalRChatForMVC.Model;
 using System;
 using System.Collections.Generic;
@@ -22,10 +23,13 @@ namespace SignalRChatForMVC
             var id = Context.ConnectionId;
             if (ConnectedUsers.Count(x => x.UserID == userID) == 0)
             {
+
+                string userName = HomeController.UserBase.Find(i => i.UserID == userID).UserName;
                 ConnectedUsers.Add(new CurrentUser
                 {
                     ConnectionId = id,
                     UserID = userID,
+                    UserName = userName
                 });
                 // Clients.Caller.onConnected(id, userID, url);
                 // Clients.AllExcept(id).onNewUserConnected(id, userID);//向所有客户端发请求,除了当前用户之外

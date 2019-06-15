@@ -1,4 +1,8 @@
 signalR 是实现WEB上的点到点的通讯,它可以把数据从一端推送到别一端.
 聊在室:
    过去:一般使用JS的实时轮询技术,效率比较低,HTTP请求多,无用的请求也比较多,定时去拉取数据
-  现在:我们用websocket技术,它类似于传统的socket技术,每个端都有自己唯一的connectionid ,这样在A用户发到B用户时,就可以实现消息的推送.
+   现在:我们用websocket技术,它类似于传统的socket技术,每个端都有自己唯一的connectionid ,这样在A用户发到B用户时,就可以实现消息的推送.
+
+前后分离:
+1. 前端可以注册自己的方法到后台Hub上,一般用hub.client.方法名表示,而后端通过Hub.Client.方法名进行回调.
+2  websocket里,用户之间使用connectionId进行区分,每个登陆的客户端都有唯一的conntionId,以便于后端去回调它们.

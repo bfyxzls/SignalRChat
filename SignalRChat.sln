@@ -1,50 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat", "SignalRChat\SignalRChat.csproj", "{D43E0B39-D610-4510-AB42-C778E2B99D94}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D3EE437E-378A-4898-81EA-0C16F2EAF406}"
-EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{5B918597-B8C6-43EE-B74F-0F8D00D2EE18}"
-EndProject
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChatForMVC", "SignalRChatForMVC\SignalRChatForMVC.csproj", "{4D009EA3-EC1F-4764-8C58-57F5CE99FE88}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B5588B8-DFC8-450D-ABD2-C723B46EB8F3}"
+	ProjectSection(SolutionItems) = preProject
+		说明.txt = 说明.txt
+	EndProjectSection
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://losezhang.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ModelingProject1\\ModelingProject1.modelproj
-		SccProjectName1 = ModelingProject1
-		SccLocalPath1 = ModelingProject1
-		SccProjectUniqueName2 = SignalRChat\\SignalRChat.csproj
-		SccProjectName2 = SignalRChat
-		SccLocalPath2 = SignalRChat
-		SccProjectUniqueName3 = Test\\Test.csproj
-		SccProjectName3 = Test
-		SccLocalPath3 = Test
-		SccProjectUniqueName4 = SignalRChatForMVC\\SignalRChatForMVC.csproj
-		SccProjectName4 = SignalRChatForMVC
-		SccLocalPath4 = SignalRChatForMVC
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D43E0B39-D610-4510-AB42-C778E2B99D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D43E0B39-D610-4510-AB42-C778E2B99D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D43E0B39-D610-4510-AB42-C778E2B99D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D43E0B39-D610-4510-AB42-C778E2B99D94}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3EE437E-378A-4898-81EA-0C16F2EAF406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3EE437E-378A-4898-81EA-0C16F2EAF406}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3EE437E-378A-4898-81EA-0C16F2EAF406}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3EE437E-378A-4898-81EA-0C16F2EAF406}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B918597-B8C6-43EE-B74F-0F8D00D2EE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B918597-B8C6-43EE-B74F-0F8D00D2EE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B918597-B8C6-43EE-B74F-0F8D00D2EE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B918597-B8C6-43EE-B74F-0F8D00D2EE18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D009EA3-EC1F-4764-8C58-57F5CE99FE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4D009EA3-EC1F-4764-8C58-57F5CE99FE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D009EA3-EC1F-4764-8C58-57F5CE99FE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B9A03FB-8035-4F0C-BCCA-2482E041FC1D}
 	EndGlobalSection
 EndGlobal
